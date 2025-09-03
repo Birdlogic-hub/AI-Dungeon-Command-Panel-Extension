@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "AID Command Panel",
+  "version": "0.2.0",
+  "description": "Click a command in the popup to insert it into AI Dungeon's input box.",
+  "action": { "default_popup": "popup.html", "default_title": "AID Command Panel" },
+  "permissions": ["tabs", "storage"],
+  "host_permissions": [
+    "*://*.aidungeon.com/*",
+    "*://*.aidungeon.io/*"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "*://*.aidungeon.com/*",
+      "*://*.aidungeon.io/*"
+    ],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
