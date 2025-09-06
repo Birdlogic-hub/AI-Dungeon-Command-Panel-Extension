@@ -1,0 +1,27 @@
+[
+  {
+    "hint": "species, nickname",
+    "insert": "/recruit",
+    "label": "Recruit"
+  },
+  {
+    "hint": "id1, id2",
+    "insert": "/swap",
+    "label": "Swap"
+  },
+  {
+    "hint": "id",
+    "insert": "/call",
+    "label": "Call"
+  },
+  {
+    "hint": "id",
+    "insert": "/bench",
+    "label": "Bench"
+  },
+  {
+    "label": "Evolve",
+    "insert": "/evolve",
+    "hint": "id, Stone Type"
+  }
+]
